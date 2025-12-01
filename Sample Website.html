@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Cricket Universe — Global Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- ======== STYLE SHEET ========= -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ======== HEADER NAV ========= -->
+<header>
+    <div class="logo">🏏 Cricket Universe</div>
+    <nav>
+        <button onclick="show('home')">Home</button>
+        <button onclick="show('fixtures')">Fixtures</button>
+        <button onclick="show('tournaments')">Tournaments</button>
+        <button onclick="show('pitch')">Pitch</button>
+        <button onclick="show('rankings')">Rankings</button>
+        <button onclick="show('results')">Results</button>
+        <button onclick="show('contact')">Contact</button>
+    </nav>
+</header>
+
+
+<!-- ========= HOME ========= -->
+<section id="home" class="active">
+    <h1>Welcome to Cricket Universe 🌏</h1>
+    <p style="margin-top:6px;">Your home for global cricket — schedules, rankings & live insights</p>
+
+    <div class="grid" style="margin-top:40px;">
+        
+        <div class="card">
+            <h3 style="text-align:center;">IND vs AUS Test Series</h3>
+            <p style="text-align:center; margin-top:6px;">Jan 23 → Mar 8 • Ongoing</p>
+            <div style="text-align:center;">
+                <button class="btn" onclick="show('fixtures')" style="margin-top:16px;">View</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 style="text-align:center;">Upcoming Tournaments</h3>
+            <p style="text-align:center; margin-top:6px;">IPL • WTC • Ashes • CWC 2027</p>
+            <div style="text-align:center;">
+                <button class="btn" onclick="show('tournaments')" style="margin-top:16px;">Browse</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 style="text-align:center;">Global Rankings</h3>
+            <p style="text-align:center; margin-top:6px;">Latest ICC Rankings</p>
+            <div style="text-align:center;">
+                <button class="btn" onclick="show('rankings')" style="margin-top:16px;">Check</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ========= IND vs AUS FIXTURES ========= -->
+<section id="fixtures">
+    <h1>IND 🇮🇳 vs AUS 🇦🇺 — Test Series Fixtures</h1>
+    <p><strong>Series Dates:</strong> Jan 23 → Mar 8</p>
+
+    <div class="grid">
+        <div class="card"><h3>1st Test — Lucknow</h3><p>Jan 23–27 • 9:30AM–4:30PM</p></div>
+        <div class="card"><h3>2nd Test — Mullanpur</h3><p>Feb 2–6 • 9:30AM–4:30PM</p></div>
+        <div class="card"><h3>3rd Test — Ranchi</h3><p>Feb 12–16 • 9:30AM–4:30PM</p></div>
+        <div class="card"><h3>4th Test — Vizag</h3><p>Feb 22–26 • 9:30AM–4:30PM</p></div>
+        <div class="card"><h3>5th Test — Chennai (D/N)</h3><p>Mar 4–8 • 2PM–9PM</p></div>
+    </div>
+</section>
+
+
+
+<!-- ========= NEW: TOURNAMENT HUB ========= -->
+<section id="tournaments">
+    <h1>Major Cricket Tournaments</h1>
+    <p>Select a tournament to view fixtures:</p>
+
+    <div class="grid" style="margin-top:25px;">
+        
+        <div class="card">
+            <h3>IPL 2025</h3>
+            <p>Starts April 2025 — Full 10-Team Format</p>
+            <button class="btn" onclick="show('ipl')">Open</button>
+        </div>
+
+        <div class="card">
+            <h3>WTC Final 2025</h3>
+            <p>Lord's — Likely contenders: AUS, NZ, SA</p>
+            <button class="btn" onclick="show('wtc')">Open</button>
+        </div>
+
+        <div class="card">
+            <h3>Ashes 2025–26</h3>
+            <p>Australia vs England • 5-Test Series</p>
+            <button class="btn" onclick="show('ashes')">Open</button>
+        </div>
+
+        <div class="card">
+            <h3>CWC 2027</h3>
+            <p>Hosted by South Africa, Zimbabwe & Namibia</p>
+            <button class="btn" onclick="show('cwc')">Open</button>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ===== IPL FIXTURES ===== -->
+<section id="ipl">
+<h1>IPL 2025 Fixtures</h1>
+
+<div class="grid">
+
+<div class="card">
+<h3>MI vs CSK</h3>
+<p>Mumbai • 7:30PM</p>
+</div>
+
+<div class="card">
+<h3>RCB vs KKR</h3>
+<p>Bengaluru • 7:30PM</p>
+</div>
+
+<div class="card">
+<h3>SRH vs GT</h3>
+<p>Hyderabad • 7:30PM</p>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ===== WTC FINAL ===== -->
+<section id="wtc">
+<h1>World Test Championship Final 2025</h1>
+<p>Venue: Lord’s, London</p>
+
+<div class="card" style="margin-top:20px;">
+<h3>Final</h3>
+<p>Australia 🇦🇺 vs South Africa 🇿🇦 (Projected)</p>
+<p>June 2025</p>
+</div>
+</section>
+
+
+
+<!-- ===== ASHES ===== -->
+<section id="ashes">
+<h1>ASHES 2025–26</h1>
+
+<div class="grid">
+
+<div class="card">
+<h3>1st Test — Gabba</h3><p>Nov 2025</p>
+</div>
+
+<div class="card">
+<h3>2nd Test — Adelaide (D/N)</h3><p>Nov 2025</p>
+</div>
+
+<div class="card">
+<h3>3rd Test — Melbourne</h3><p>Dec 2025</p>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ===== CWC 2027 ===== -->
+<section id="cwc">
+<h1>Cricket World Cup 2027</h1>
+
+<div class="grid">
+<div class="card"><h3>Opening Match</h3><p>SA vs NZ — Cape Town</p></div>
+<div class="card"><h3>India 🇮🇳 vs Pakistan 🇵🇰</h3><p>Johannesburg</p></div>
+<div class="card"><h3>Australia 🇦🇺 vs England 🏴</h3><p>Pretoria</p></div>
+</div>
+</section>
+
+
+
+<!-- ========= PITCH ========= -->
+<section id="pitch">
+<h1>IND vs AUS Pitch Behaviour</h1>
+<div class="grid">
+<div class="pitch-card"><h3>Day 1</h3><p>90% Batting</p></div>
+<div class="pitch-card"><h3>Day 2</h3><p>70% Batting</p></div>
+<div class="pitch-card"><h3>Day 3</h3><p>Balanced</p></div>
+<div class="pitch-card"><h3>Day 4</h3><p>Spin Dominant</p></div>
+<div class="pitch-card"><h3>Day 5</h3><p>Rank Turner</p></div>
+</div>
+</section>
+
+
+
+<!-- ========= RANKINGS ========= -->
+<section id="rankings">
+<h1>Test Rankings</h1>
+
+<table>
+<tr><th>#</th><th>Team</th><th>Win %</th><th>Status</th></tr>
+
+<tr><td>1</td><td>Australia 🇦🇺</td><td><strong>93.81%</strong></td><td>1 Loss</td></tr>
+<tr><td>2</td><td>New Zealand 🇳🇿</td><td>65.43%</td><td>—</td></tr>
+<tr><td>3</td><td>South Africa 🇿🇦</td><td>61.02%</td><td>—</td></tr>
+<tr><td>4</td><td>England 🏴</td><td>53.90%</td><td>—</td></tr>
+<tr><td>5</td><td>India 🇮🇳</td><td><strong>47.83%</strong></td><td>—</td></tr>
+
+</table>
+</section>
+
+
+
+<!-- ========= RESULTS ========= -->
+<section id="results">
+<h1>Results</h1>
+<p>No completed matches yet.</p>
+</section>
+
+
+
+<!-- ========= CONTACT ========= -->
+<section id="contact">
+<h1>Contact</h1>
+<p>Email: cricket@series.com</p>
+</section>
+
+
+
+<footer>© 2025 Cricket Universe — Powered by Passion 🏏</footer>
+
+
+<!-- ========= NAV JS ========= -->
+<script>
+function show(page){
+document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+document.getElementById(page).classList.add("active");
+window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
+
